@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import HomePage from './pages/HomePage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import GalleryPage from './pages/GalleryPage';
+import LocationPage from './pages/LocationPage';
+import AccommodationPage from './pages/AccommodationPage';
+import Footer from './components/Footer';
+import JoinUsPage from './pages/JoinUsPage';
+import { dataLocation } from './data'
 
 function App() {
+
+  /* Location Page */
+  const locationPage = dataLocation.map(function (data) {
+    return <LocationPage
+      key={data.id}
+      item={data} />
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/location" element={ locationPage } />
+          <Route path="/accommodations" element={<AccommodationPage />} />
+          <Route path="/joinUs" element={<JoinUsPage />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </>
   );
 }
 

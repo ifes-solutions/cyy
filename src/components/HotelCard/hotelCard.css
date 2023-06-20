@@ -1,0 +1,61 @@
+@media screen and (max-width: 5000px) {
+    .alt--img {
+        width: 14rem;
+        height: 14rem;
+    }
+    .alt--title {
+        font-size: 19px;
+    }
+    .alt--span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .alt--img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .alt--title {
+        font-size: 15px;
+    }
+    .alt--span {
+        font-size: 14px;
+    }
+}
+
+.alt {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 200ms ease-in;
+    background-color: rgb(235, 233, 244);
+    text-align: center;
+    box-shadow: 1px 1px 2px rgb(243, 237, 237);
+}
+
+.alt:hover {
+    transform: scale(1.02);
+}
+
+.alt--img {
+    margin-top: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+.alt--title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.alt--span {
+    padding: 0 3rem;
+    /* font-size: 16px; */
+    margin-bottom: 12px;
+    line-height: 30px;
+    color: rgb(70, 60, 105);
+}

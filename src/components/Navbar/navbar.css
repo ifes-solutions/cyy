@@ -1,0 +1,80 @@
+@media screen and (max-width:2000px) {
+  .nav--ul > li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .nav--ul > li {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width:300px) {
+  .nav--ul > li {
+    font-size: 6px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.nav--div {
+  display: inline-flex;
+}
+
+.nav {
+  background-color: var(--background-color);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  box-shadow: 0 2px 4px 0 lightgray;
+}
+
+.nav--img {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  float: left;
+  cursor: pointer;
+}
+
+.nav--ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-family: "Apple Chancery", cursive;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px lightgrey;
+  overflow-wrap: break-word;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+}
+
+.nav--ul > li {
+  margin-right: 20px;
+}
+
+.nav--link {
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: rgb(156, 4, 4);
+  text-decoration: underline;
+}
+
+.nav--link:hover {
+  color: rgb(156, 4, 4);
+}

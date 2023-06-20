@@ -1,0 +1,69 @@
+@media screen and (max-width: 5000px) {
+    .card--img {
+        height: 12rem;
+    }
+    .card--title {
+        font-size: 16px;
+    }
+    .card--span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card--img { 
+        height: 10rem; 
+    }
+    .card--title {
+        font-size: 12px;
+    }
+    .card--span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .card--img {
+        height: 8rem;
+    }
+    .card--title {
+        font-size: 10px;
+    }
+    .card--span {
+        font-size: 10px;
+    }
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 200ms ease-in;
+    background-color: var(--background-color);
+}
+
+.card--img {
+    width: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+.card--title {
+    padding-left: 0.4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card--span {
+    padding-left: 0.4rem;
+    margin-bottom: 10px;
+}
+
+.card--openSpot {
+    text-transform: uppercase;
+    font-weight: bold;
+}

@@ -1,0 +1,107 @@
+@media screen and (max-width: 5000px) {
+    .form--container {
+        margin: 40px 200px 20px 200px;
+    }
+
+    .form--title {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form--container {
+        margin: 10px 20px 10px 20px;
+    }
+
+    .form--title {
+        font-size: 16px;
+    }
+}
+
+body {
+    background-color: white;
+}
+
+.form--container {
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.form--title {
+    padding-top: 20px;
+    justify-content: center;
+    font-family: var(--title-fonts);
+    color: rgb(244, 189, 51);
+    text-shadow: 1px 2px 2px lightgray;
+    text-transform: uppercase;
+}
+
+form > input,
+.form--btn {
+    text-align: center;
+    font-family: var(--text-fonts);
+    font-size: 16px;
+    width: auto;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    padding: 5px;
+    box-shadow: 1px 2px 2px lightgray;
+}
+
+form > input:hover,
+.form--btn:hover {
+    transform: scale(1.02);
+}
+
+form > input:focus {
+    outline: none;
+}
+
+.form--btn {
+    background-color: var(--background-color);
+    color: rgb(121, 118, 118);
+    cursor: pointer;
+    height: 40px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.form--input {
+    display: flex;
+    flex-direction: column;
+}
+
+.form--error {
+    text-align: left;
+    margin-top: 3px;
+    color: rgb(234, 134, 134);
+    font-size: 12px;
+    margin-bottom: 30px;
+    padding: 0 5px;
+}
+
+/* Hide the icon in input text */
+input::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    right: 0;
+}
+
+/* Hide the number up down in input text */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Customize input text placeholder color */
+::placeholder {
+    color: rgb(151, 148, 148);
+}

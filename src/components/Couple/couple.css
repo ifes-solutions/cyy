@@ -1,0 +1,78 @@
+@media screen and (max-width: 2000px) {
+    .coup--text {
+        font-size: 20px;
+        padding: 0 100px;
+    }
+    .coup--name {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .coup--text {
+        font-size: 16px;
+        padding: 0 60px;
+    }
+    .coup--name {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .coup--text {
+        font-size: 12px;
+        padding: 0 20px;
+    }
+    .coup--name {
+        font-size: 25px;
+    }
+}
+
+.coup--border {
+    text-align: center;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.coup--name {
+    font-family: 'Snell Roundhand', cursive;
+    color: goldenrod;
+    text-shadow: 2px 2px 2px rgb(243, 237, 210);
+}
+
+.coup--text {
+    font-family: var(--text-fonts);
+    text-shadow: 1px 1px 1px lightgray;
+    text-align: center;
+    word-spacing: 5px;
+    line-height: 25px;
+}
+
+.coup--title {
+    padding-top: 40px;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--title-fonts);
+    font-size: 20px;
+    color: rgb(244, 189, 51);
+    text-shadow: 1px 2px 2px lightgray;
+    text-transform: uppercase;
+}
+
+.couple--image {
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+    display: inline-block;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px 0 lightgray;
+}
+
+.couple--image2 {
+    filter: brightness(90%);
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px 0 lightgray;
+}

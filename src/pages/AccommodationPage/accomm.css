@@ -1,0 +1,88 @@
+@media screen and (max-width: 5000px) {
+    .accom--div {
+        padding: 0 150px 0 150px;
+    }
+    .accom--span {
+        font-size: 20px;
+    }
+    .accom--title {
+        font-size: 30px;
+    }
+    .wrapper {
+        margin: 80px 0 50px 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .accom--div {
+        padding: 10px 50px 0 50px;
+    }
+    .accom--span {
+        font-size: 15px;
+    }
+    .accom--title {
+        font-size: 20px;
+    }
+    .wrapper {
+        margin: 20px 0 20px 0;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .accom--div {
+        padding: 5px 20px 0 20px;
+    }
+    .accom--span {
+        font-size: 12px;
+    }
+    .accom--title {
+        font-size: 15px;
+    }
+}
+
+.accom--title {
+    padding-top: 40px;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--title-fonts);
+    color: rgb(244, 189, 51);
+    text-shadow: 1px 2px 2px lightgray;
+    text-transform: uppercase;
+}
+
+
+.accom--wrap {
+    position: relative;
+    white-space: nowrap;
+}
+
+.accom--span {
+    font-family: var(--text-fonts);
+    text-shadow: 1px 1px 1px lightgray;
+    text-align: center;
+    word-spacing: 5px;
+    line-height: 25px;
+}
+
+.accom--div {
+    direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.accom--text {
+    justify-content: center;
+}
+
+.wrapper {
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 20rem));
+    gap: 2rem;
+    justify-content: center;
+    font-family: var(--text-fonts);
+    text-shadow: 1px 1px 1px lightgray;
+}
